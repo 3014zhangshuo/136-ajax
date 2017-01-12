@@ -1,3 +1,8 @@
-$('#new_link').remove();
-$('#new_task').show();
-$('#incomplete_tasks').append('<%= j render @task  %>');
+// $('#new_link').remove();
+// $('#new_task').show();
+// $('#incomplete_tasks').append('<%= j render(@task)  %>');
+// $('#edit_task_<%= @task.id %>').submitOnCheck();
+$('#new_task').remove();
+$('#new_link').show();
+$('#incomplete_tasks').append('<%= j render(@task) %>');
+$('#edit_task_<%= @task.id %>').submitOnCheck();
