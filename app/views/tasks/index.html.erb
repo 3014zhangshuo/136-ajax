@@ -1,0 +1,12 @@
+<h3>click this!</h3>
+<%= link_to "new task", new_task_path, id: "new_link" %>
+
+<h4>incomplete task</h4>
+<div class="tasks" id="incomplete_tasks">
+  <%= render @incomplete_tasks %>
+</div>
+
+<h4>complete task</h4>
+<div class="tasks" id="complete_tasks">
+  <%= render @complete_tasks %>
+</div>

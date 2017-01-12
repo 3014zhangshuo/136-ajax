@@ -2,12 +2,13 @@ class TasksController < ApplicationController
 
   def index
     sleep 1
-    @complete_task = Task.where(complete: true)
-    @incomplete_task = Task.where(complete; false)
+    @complete_tasks = Task.where(complete: true)
+    @incomplete_tasks = Task.where(complete: false)
   end
 
   def new
     @task = Task.new
+  end
 
   def create
     @task = Task.create(task_params)
